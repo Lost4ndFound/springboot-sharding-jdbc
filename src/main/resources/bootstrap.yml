@@ -1,0 +1,13 @@
+server:
+  port: 5008
+spring:
+  cloud:
+    nacos:
+      config:
+        namespace: ${spring.cloud.nacos.discovery.namespace}
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        group: ${spring.cloud.nacos.discovery.group}
+      discovery:
+        server-addr: ${NACOS-HOST:127.0.0.1:8848}
+        namespace: ${NAMESPACE:86a30a1a-7dfc-4d03-bb52-e9564d69231d}
+        group: ${GROUP:DEFAULT_GROUP}
